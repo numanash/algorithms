@@ -6,8 +6,9 @@ class Solution{
 	**************/
 	
     /**** Solution ****/
+    // We will use Greedy Approach to solve this
     activityselection(start,end,N){
-
+	
         if(N !== start.length || N !== end.length){
             throw new Error("the value of N should be equal to the length of start or finsh time arrays length")
         }
