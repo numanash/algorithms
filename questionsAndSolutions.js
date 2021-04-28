@@ -1,7 +1,11 @@
 
 class Solution{
-
-    // Question # 1
+	
+	/**************
+         Question # 1
+	**************/
+	
+    /**** Solution ****/
     activityselection(start,end,N){
 
         if(N !== start.length || N !== end.length){
@@ -24,10 +28,18 @@ class Solution{
         //  returning maximum number of activities
         return activity;
     } 
+	
+	
+
+	/**************
+	 Question # 2
+	**************/
 
     // In Question 2 solution for the equilibrium is not accurate because according to the defination it is a point at which before and after sum of variable are equal 
     //  In example 2 equilibrium point is 5 and it is on position/index 2 inside array becuase array starts form index 0
     //  similar in example 1
+	
+     /**** Solution ****/
     equilibriumPoint(arr,n){
         //   One for Reverse Array and One for Forward Array
         let sumForward=[], sumReverse=[];
@@ -53,9 +65,17 @@ class Solution{
         // if not found any then
         return -1        
     } 
-    
-    // Question # 3
+	
+	
+	
+	/**************
+         Question # 3
+	**************/
+	
+     /**** ISSUES ****/
     //  Example 2 have issue as 'aaa' is provided as string so here the start is 0 and end is 2 where inbetween we have only 1 char as it is repetitive char a so it's answer will be 1
+    
+    /**** Solution ****/
     longestSubstrDitinctChars(S){
         // lets create an object to store String
         let stringObj = {};
@@ -88,7 +108,11 @@ class Solution{
         
     }
 
-    // Question # 4
+   /**************
+         Question # 4
+	**************/
+	
+    /**** Solution ****/
     maxMeetings(start, end, N)
     {
     	//Declaring variables
